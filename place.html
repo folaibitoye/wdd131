@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero-large.webp" srcset="
+          images/hero-small.webp 500w,
+          images/hero-medium.webp 1000w,
+          images/hero-large.webp 1500w
+        " sizes="(max-width: 600px) 500px,
+               (max-width: 1000px) 1000px,
+               1500px" alt="A Scenic View of Nigeria">
+            <div class="data-card">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 923,768 km²</li>
+                    <li><strong>Population:</strong> 218,541,000</li>
+                    <li><strong>Capital:</strong> Abuja</li>
+                    <li><strong>Languages:</strong> English, Yoruba, Hausa, Igbo</li>
+                    <li><strong>Currency:</strong> Naira (₦)</li>
+                    <li><strong>Time Zone:</strong> UTC+1</li>
+                    <li><strong>Calling Code:</strong> +234</li>
+                    <li><strong>Internet TLD:</strong> .ng</li>
+                </ul>
+            </div>
+
+            <div class="weather-card">
+                <h2>Weather</h2>
+                <ul>
+                    <li><strong>Temperature:</strong> <span id="temp">30</span>°C</li>
+                    <li><strong>Conditions:</strong> Mostly Sunny</li>
+                    <li><strong>Wind:</strong> <span id="wind">10</span> km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="chill">Calculating...</span></li>
+                </ul>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> 🌸 Folahan Peter Ibitoye 🌸 Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
