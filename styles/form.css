@@ -1,0 +1,160 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f8f5ff;
+    color: #1b0d28;
+}
+
+header {
+    background: #330033;
+    color: #fff;
+    padding: 1.2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+}
+
+form {
+    max-width: 34rem;
+    margin: 0 auto;
+    background: #d9d1db;
+    padding: 1.6rem 1.4rem;
+    border-radius: .5rem;
+    display: grid;
+    gap: 1.2rem;
+}
+
+
+label {
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    font-size: 1rem;
+    padding: .6rem .8rem;
+    border: 2px solid #ccc;
+    border-radius: .3rem;
+}
+
+
+.rating {
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.4rem;
+    max-width: 27rem;
+    margin-top: 0.6rem;
+    margin-bottom: 1.4rem;
+    padding: 0.5rem 0;
+    justify-content: center;
+}
+
+.rating label {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+    line-height: 1.2;
+    color: #000;
+}
+
+.rating label::first‑line {
+    
+    font-weight: 700;
+}
+
+
+.rating input[type="radio"] {
+    appearance: none;
+    /* remove default OS style */
+    width: 1.9rem;
+    height: 1.9rem;
+    border: 2px solid #666;
+    border-radius: 90%;
+    background: #fff;
+    margin-top: .35rem;
+    /* space between star and circle */
+    cursor: pointer;
+}
+
+.rating input[type="radio"]:checked {
+    background: #330033;
+   
+}
+
+
+.rating input[type="radio"]:focus {
+    outline: 3px solid #460046;
+    outline-offset: 2px;
+}
+
+
+.features {
+    display: grid;
+    gap: .1rem .8rem;
+}
+
+.features input {
+    margin-right: .8rem;
+}
+
+
+.cta {
+    margin-top: .4rem;
+    font-size: 1.2rem;
+    padding: .8rem 1rem;
+    border: none;
+    border-radius: .4rem;
+    background: #330033;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cta:hover,
+.cta:focus {
+    background: #460046;
+}
+
+/* optional text */
+.optional {
+    font-weight: normal;
+    font-style: italic;
+    font-size: .9rem;
+    color: #0009;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background: #330033;
+    color: #fff;
+    padding: .8rem 1rem;
+    font-size: .9rem;
+}

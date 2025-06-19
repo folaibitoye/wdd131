@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Review</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="styles/form.css">
+
+    
+    <script defer src="scripts/form.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <!-- ─────────────────────────────  FORM  ───────────────────────────── -->
+        <form id="reviewForm" method="get" action="review.html">
+
+            <!-- PRODUCT NAME (select) ------------------------------------------>
+            <label for="productName">Product&nbsp;Name</label>
+            <select id="productName" name="productName" required>
+                
+                <option value="" selected disabled>Choose a Product …</option>
+             
+            </select>
+
+            <!-- OVERALL RATING (1–5) ------------------------------------------->
+            <fieldset class="rating">
+                <legend>Overall&nbsp;Rating</legend>
+
+                <div class="rating">
+                    <label>
+                        ★
+                        <input type="radio" name="rating" value="1" required>
+                    </label>
+                    <label>
+                        ★★
+                        <input type="radio" name="rating" value="2">
+                    </label>
+                    <label>
+                        ★★★
+                        <input type="radio" name="rating" value="3">
+                    </label>
+                    <label>
+                        ★★★★
+                        <input type="radio" name="rating" value="4">
+                    </label>
+                    <label>
+                        ★★★★★
+                        <input type="radio" name="rating" value="5">
+                    </label>
+                    </div>
+            </fieldset>
+            
+            <!-- INSTALLATION DATE ----------------------------------------------->
+            <label for="installDate">Date&nbsp;of&nbsp;Installation</label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <!-- USEFUL FEATURES (checkboxes) ------------------------------------>
+            <fieldset class="features">
+                <legend>Which features did you find useful? <em>(check all that apply)</em></legend>
+
+                <input type="checkbox" id="featureDurability" name="features" value="durability">
+                <label for="featureDurability">Durability</label>
+
+                <input type="checkbox" id="featureEase" name="features" value="ease-of-use">
+                <label for="featureEase">Ease&nbsp;of&nbsp;Use</label>
+
+                <input type="checkbox" id="featurePerformance" name="features" value="performance">
+                <label for="featurePerformance">Performance</label>
+
+                <input type="checkbox" id="featureDesign" name="features" value="design">
+                <label for="featureDesign">Design</label>
+            </fieldset>
+
+            <!-- WRITTEN REVIEW (optional) --------------------------------------->
+            <label for="writtenReview">Written&nbsp;Review <span class="optional">(optional)</span></label>
+            <textarea id="writtenReview" name="writtenReview" rows="6"></textarea>
+
+            <!-- USER NAME (optional) -------------------------------------------->
+            <label for="userName">Your&nbsp;Name <span class="optional">(optional)</span></label>
+            <input type="text" id="userName" name="userName" placeholder="Folahan Peter Ibitoye">
+
+            <!-- SUBMIT BUTTON ---------------------------------------------------->
+            <input type="submit" value="Post&nbsp;Review" class="cta">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;2024 &#127800; Folahan Peter Ibitoye &#127800; Nigeria</p>
+        <p id="lastMod"></p>
+    </footer>
+
+    <script>
+        /* This represents the display of  the file’s last‑modified time in the footer */
+        document.getElementById("lastMod").textContent =
+            "Last Modification: " + document.lastModified;
+    </script>
+</body>
+
+</html>
