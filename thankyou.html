@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Thank You – AutoSmart Hub</title>
+    <link rel="stylesheet" href="styles/site.css" />
+    <script defer src="scripts/thankyou.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Thank You!</h1>
+    </header>
+    <main>
+        <p>Your maintenance request has been submitted successfully. We’ll get back to you shortly!</p>
+        <a href="index.html" class="btn">← Back to Home</a>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> AutoSmart Hub</p>
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("submitCount").textContent =
+        localStorage.getItem("ash-form-count") || 0;
+    </script>
+</body>
+
+</html>
